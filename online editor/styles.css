@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+    margin: 0;
+    padding: 3px;
+    box-sizing: border-box;
+}
+
+body {
+    background: white;
+    color: #fff;
+    background-size: contain;
+    font-family: "Montserrat", sans-serif;
+}
+
+.header h2 {
+    text-align: center;
+}
+
+.header label i {
+    margin-left: 0;
+}
+
+.header label {
+    margin-left: 25px;
+}
+
+body.dark {
+    background-color: #292c35;
+}
+
+body.dark h2, body.dark{
+    color: orange;
+}
+
+body.dark button{
+    color:orange;
+}
+.checkbox {
+    opacity: 0;
+    position: absolute;
+}
+
+.checkbox-label {
+    background-color: #111;
+    width: 53px;
+    height: 30px;
+    border-radius: 50px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.fa-moon {color: #f1c40f;}
+
+.fa-sun {color: #f39c12;}
+
+.checkbox-label .ball {
+    background-color: #fff;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 2px;
+    top: 2px;
+    border-radius: 50%;
+    transition: transform 0.2s linear;
+}
+
+.checkbox:checked + .checkbox-label .ball {
+    transform: translateX(24px);
+}
+
+.header {
+    margin-top: 5px;
+    color: black;
+}
+
+.container {
+    width: 100%;
+    height: 95vh;
+    padding: 5px 20px 20px 20px;
+    display: flex;
+}
+
+.left, .right {
+    flex-basis: 50%;
+    padding: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 27%;
+    background: #1c2130;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 10px;
+    outline: 0;
+    font-size: 14px;
+    font-weight: 900;
+    border-color: white;
+}
+
+iframe {
+    width: 100%;
+    height: 97%;
+    background: #f4f0ef;
+    border-radius: 10px;
+    outline: 0;
+    border-color: black;
+    
+}
+
+label i {
+    margin-right: 10px;
+    margin-left: 10px;
+}
+
+label {
+    display: flex;
+    align-items: center;
+    background: #000;
+    height: 30px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+
+label i.active {
+    color: red;
+}
+
+#html-code, #css-code{
+    margin-bottom: 10px;
+}
+
+#clear-button {
+    padding: 10px 20px;
+    background-color: orange;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    float: right;
+    margin-right: 30px;
+}
+
+#clear-button:hover {
+    background-color: #1c2130;
+}

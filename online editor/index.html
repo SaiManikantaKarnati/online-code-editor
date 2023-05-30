@@ -1,0 +1,45 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/3647bd6601.js" crossorigin="anonymous"></script>
+    
+
+    <title>Online Code Editor</title>
+</head>
+<body>
+    <div class="header">
+        <h2>Online Code Editor</h2>
+        <button id="clear-button" onclick="clearCode()">Clear Code</button>
+        <input type="checkbox" class="checkbox" id="checkbox">
+        <label for="checkbox" class="checkbox-label">
+            <i class="fa-solid fa-moon"></i>
+            <i class="fa-solid fa-sun"></i>
+            <span class="ball"></span>
+        </label>
+    </div>
+
+    <div class="container">
+        <div class="left">
+            <label><i class="fa-brands fa-html5"></i><b>HTML</b></label>
+            <textarea id="html-code" onkeyup="run()"></textarea>
+
+            <label><i class="fa-brands fa-css3-alt"></i>CSS</label>
+            <textarea id="css-code" onkeyup="run()"></textarea>
+
+            <label><i class="fa-brands fa-square-js"></i>Javascript</label>
+            <textarea id="js-code" onkeyup="run()"></textarea>
+        </div>
+
+        <div class="right">
+            <label onclick="runCode()"><i id="run-icon" class="fa-solid fa-play"></i>Output</label>
+            <iframe id="output"></iframe>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+
+</body>
+</html>
